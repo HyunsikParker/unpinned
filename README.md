@@ -2,7 +2,11 @@
 
 **Check what a photo reveals before you share it, then save a copy without the hidden details. Everything happens in your browser.**
 
-Live demo: https://hyunsikparker.github.io/unpinned/
+Live demo: https://hyunsikparker.github.io/unpinned/ · Video walkthrough (1 min 4 s, captions):
+https://hyunsikparker.github.io/unpinned/demo.html
+
+The video is recorded from the page by `scripts/demo.mjs` (Playwright), which checks the findings the narration names
+against the page as it records. The narration is a synthetic voice (Qwen3-TTS, run locally).
 
 ## The problem
 
