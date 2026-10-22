@@ -25,6 +25,8 @@ interface Item {
 
 const ACCEPT = 'image/jpeg,image/png,image/webp,image/heic,image/heif,.jpg,.jpeg,.png,.webp,.heic,.heif'
 
+const RISK: Record<Severity | 'none', string> = { high: 'High risk', medium: 'Some risk', low: 'Low risk', none: 'Nothing to remove' }
+
 const HEADLINE: Record<Severity | 'none', string> = {
   high: 'This photo gives away more than you can see',
   medium: 'This photo carries some hidden details',
@@ -226,6 +228,7 @@ function Result({ item, onClean, onRemove }: { item: Item; onClean: (id: number)
         <p className="file-line">{item.name} · {kb(item.size)}</p>
         {r.supported ? (
           <>
+            <p className="risk">{RISK[verdict(r)]}</p>
             <h3 id={titleId}>{HEADLINE[verdict(r)]}</h3>
             <p className="summary">{summary(r)}</p>
             {item.error && <p className="error" role="alert">{item.error}</p>}

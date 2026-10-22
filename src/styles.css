@@ -89,13 +89,13 @@ button:disabled { opacity: 0.55; cursor: progress; }
   gap: 22px;
   background: var(--panel);
   border: 1px solid var(--line);
-  border-left: 6px solid var(--low);
   border-radius: var(--radius);
   padding: 20px;
 }
-.result.level-high { border-left-color: var(--high); }
-.result.level-medium { border-left-color: var(--medium); }
-.result.level-none { border-left-color: var(--accent); }
+.risk { display: inline-block; margin: 0 0 8px; padding: 3px 9px; border-radius: 999px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; background: var(--low-soft); color: var(--low); }
+.level-high .risk { background: var(--high-soft); color: var(--high); }
+.level-medium .risk { background: var(--medium-soft); color: var(--medium); }
+.level-none .risk { background: var(--accent-soft); color: var(--accent); }
 .result-media img { border-radius: 10px; border: 1px solid var(--line); width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
 .no-preview { aspect-ratio: 3 / 2; border-radius: 10px; border: 1px dashed var(--line); display: grid; place-items: center; color: var(--muted); }
 .hidden-thumb { margin: 12px 0 0; }
