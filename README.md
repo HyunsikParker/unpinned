@@ -51,7 +51,7 @@ shelter. None of them should need to know what EXIF is.
 
 The sample photo is a sofa for sale, cropped to the sofa. Unpinned shows that the file still contains an exact location
 (synthetic: the Eiffel Tower, not anyone's home), the owner's name, a device serial number, the time it was taken, and a
-hidden preview image of the whole room, in which a street sign is readable through the window. The clean copy keeps the
+hidden preview image of the whole room, including the window and street sign that the crop cut out. The clean copy keeps the
 same picture, drops 3 KB of metadata, and the re-check finds nothing left.
 
 ## How it was checked

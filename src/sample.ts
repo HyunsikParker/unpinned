@@ -12,11 +12,11 @@ function drawScene(ctx: CanvasRenderingContext2D, w: number, h: number): void {
   ctx.fillStyle = '#9fc4e0'
   ctx.fillRect(w * 0.05, h * 0.12, w * 0.28, h * 0.38)
   ctx.fillStyle = '#2f6e3f'
-  ctx.fillRect(w * 0.09, h * 0.22, w * 0.2, h * 0.11)
+  ctx.fillRect(w * 0.07, h * 0.22, w * 0.24, h * 0.11)
   ctx.fillStyle = '#ffffff'
-  ctx.font = `bold ${Math.round(h * 0.055)}px sans-serif`
+  ctx.font = `bold ${Math.round(h * 0.042)}px sans-serif`
   ctx.textBaseline = 'middle'
-  ctx.fillText('14 Sample Lane', w * 0.105, h * 0.275)
+  ctx.fillText('14 Sample Lane', w * 0.085, h * 0.275, w * 0.21)
   ctx.strokeStyle = '#ffffff'
   ctx.lineWidth = Math.max(2, w * 0.006)
   ctx.strokeRect(w * 0.05, h * 0.12, w * 0.28, h * 0.38)
